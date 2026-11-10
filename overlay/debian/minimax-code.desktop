@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=MiniMax Code
+Name[zh_CN]=MiniMax Code 桌面端
+GenericName=AI Coding & Office Agent
+Comment=MiniMax Code desktop client (unofficial Linux build)
+Exec=/opt/minimax-code/minimax-code %U
+Icon=minimax-code
+Terminal=false
+Categories=Development;
+Keywords=MiniMax;Code;AI;Agent;MCP;
+StartupWMClass=MiniMax Code
+StartupNotify=true

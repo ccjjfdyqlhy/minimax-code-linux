@@ -1,0 +1,18 @@
+Package: minimax-code
+Version: @VERSION@
+Section: devel
+Priority: optional
+Architecture: amd64
+Installed-Size: @INSTALLED_SIZE@
+Maintainer: minimax-code-linux <noreply@localhost>
+Homepage: https://code.minimax.cn/about
+Description: MiniMax Code desktop client (unofficial Linux build)
+ MiniMax Code 官方桌面客户端的 Linux 移植版，由官方 Windows 安装包载荷
+ 搭配同版本 Electron Linux 运行时、本地重编译的原生模块组装而成。
+ .
+ 上游仅发布 macOS 与 Windows 安装包，本包装为社区非官方构建。
+Depends: libgtk-3-0, libnss3, libasound2 | libasound2t64, libgbm1, libxss1,
+ libxtst6, libx11-xcb1, libdrm2, libatk-bridge2.0-0, libcups2, libxkbcommon0,
+ libpango-1.0-0, libcairo2, libatspi2.0-0, libxcomposite1, libxdamage1,
+ libxrandr2, libgdk-pixbuf-2.0-0
+Recommends: fonts-noto-cjk

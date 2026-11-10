@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+# 让 Chromium 沙箱可用（非 root 安装时失败也无所谓，启动器会自动加 --no-sandbox）
+if [ -e /opt/minimax-code/chrome-sandbox ]; then
+  chown root:root /opt/minimax-code/chrome-sandbox 2>/dev/null || true
+  chmod 4755 /opt/minimax-code/chrome-sandbox 2>/dev/null || true
+fi
+
+update-desktop-database -q /usr/share/applications 2>/dev/null || true
+gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor 2>/dev/null || true
+
+exit 0
